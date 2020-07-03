@@ -32,7 +32,7 @@ public class CameraControllerWithBuffer : MonoBehaviour
                 player.position.y + (0.5f * cameraOffsetY),
                 transform.position.z);
 
-        else if (player.position.x > transform.position.x + (0.5f * cameraOffsetY))
+        else if (player.position.y > transform.position.y + (0.5f * cameraOffsetY))
             transform.position = new Vector3(
                 transform.position.x,
                 player.position.y - (0.5f * cameraOffsetY),
